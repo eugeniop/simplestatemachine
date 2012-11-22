@@ -1,3 +1,8 @@
+/*
+A very simple example suiong a very simple statemachine
+@eugenio_pace
+*/
+
 var stateMachine = require('./statemachine');
 
 var EventOne = function(event) 

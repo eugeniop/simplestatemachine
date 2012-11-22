@@ -1,3 +1,14 @@
+/*
+ A very simple statemachine
+ StateMachine has states identified with a name
+ each state has entries that handle some event.
+ An event selector determines whether an entry shoudl handle 
+ it or not.
+ An action is typically associated with an entry. 
+
+  @eugenio_pace
+*/
+
 ///StateEntry
 function stateEntry(state,selector)
 {
