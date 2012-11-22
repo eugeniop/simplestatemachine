@@ -46,15 +46,15 @@ state.prototype.default = function(action)
 {
   var thisState = this.stateName;
   this.any()
-      .then( function(e){
+      .then(function(e){
                 action(e);
                 return thisState;
-              });
+            });
 }
 
 state.prototype.process = function( event )
 {
-  for( var x = 0; x < this.entries.length; x++ )
+  for( x = 0; x < this.entries.length; x++ )
     if( this.entries[x].selector(event) )
       return this.entries[x].action(event);
 }
@@ -65,8 +65,6 @@ function stateMachine(name)
   this.states = [];
   this.currentState = "";
 }
-
-module.exports = stateMachine;
 
 stateMachine.prototype.state = function(stateName)
 {
@@ -79,3 +77,5 @@ stateMachine.prototype.process = function(event)
 {
   this.currentState = this.states[this.currentState].process(event);
 }
+
+module.exports = stateMachine;
