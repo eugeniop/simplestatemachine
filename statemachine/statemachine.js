@@ -7,7 +7,7 @@
  An action is typically associated with an entry and is executed when 
  there's a match for the event.
  The 'any' selector is a match always regardless of what event is present.
- The 'default' is meant as a generic handler of events that don't swicth states. It is 
+ The 'default' is meant as a generic handler of events that don't switch states. It is 
  like an 'any' and a 'then' that returns the same state it is defined on.
 
   @eugenio_pace
