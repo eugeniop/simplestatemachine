@@ -1,5 +1,5 @@
 /*
-A very simple example suiong a very simple statemachine
+A very simple example using a very simple statemachine
 @eugenio_pace
 */
 
