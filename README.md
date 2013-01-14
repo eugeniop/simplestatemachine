@@ -1,16 +1,16 @@
 simplestatemachine
 ==================
 
-A very simple state machine for node. 
+A very simple state machine for node.js 
 
 - `when` defines the condition that will match an event on a particular state.
-- `then` defines what to do, and what the next state is.
-- `any` is a condition that is always met (like in "with any evemt")
-- `default` is a shortcut for `any` and stay in the same state, doing something.
+- `then` defines what to do when a match is found, and what the next state is.
+- `any` is a condition that is always met (like in "with any event")
+- `default` is a shortcut for `any` and for staying in the same state, doing something. That is `default(f)` is like when(true).then(f(); return thisstate;)
 - The `selector` in `when` is something that returns `true` or `false`. If `true` is returned, then all evaluations are halted and `then` is executed.
 
 
-		var stateMachine = require('./statemachine');
+		var stateMachine = require('statemachine');
 		
 		var EventOne = function(event) 
 		{

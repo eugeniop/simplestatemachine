@@ -1,2 +1,25 @@
-{ "name" : "statemachine",
-  "main" : "lib/statemachine.js" }
+{
+  "name": "simplestatemachine",
+  "version": "0.0.1",
+  "author": "Eugenio Pace",
+  "description": "A very simple state machine",
+  "contributors": [ 
+    {
+      "name": "Eugenio Pace",
+      "email": "eugenio.pace@gmail.com"
+    } 
+  ],
+  "main": "./lib/statemachine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eugeniop/simplestatemachine.git"
+  },
+  "keywords": [
+    "fsm",
+    "state machine",
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.6"
+  }
+}
