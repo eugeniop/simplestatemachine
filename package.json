@@ -1,25 +1,27 @@
 {
   "name": "simplestatemachine",
-  "version": "0.0.1",
-  "author": "Eugenio Pace",
-  "description": "A very simple state machine",
-  "contributors": [ 
-    {
-      "name": "Eugenio Pace",
-      "email": "eugenio.pace@gmail.com"
-    } 
-  ],
-  "main": "./lib/statemachine",
+  "version": "0.0.0",
+  "description": "A simple state machine for node.js",
+  "main": "lib/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/eugeniop/simplestatemachine.git"
   },
   "keywords": [
     "fsm",
-    "state machine",
+    "state",
+    "machine"
   ],
+  "author": "Eugenio Pace",
   "license": "MIT",
-  "engines": {
-    "node": ">=0.6"
+  "devDependencies": {
+   "mocha": "",
+   "should": ""
   }
 }
