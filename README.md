@@ -9,7 +9,7 @@ A very simple state machine for node.js
 - `default` is a shortcut for `any` and for staying in the same state, doing something. That is `default(f)` is like when(true).then(f(); return thisstate;)
 - The `selector` in `when` is something that returns `true` or `false`. If `true` is returned, then all evaluations are halted and `then` is executed.
 
-```
+```js
 var stateMachine = require('statemachine');
 
 var EventOne = function(event){
